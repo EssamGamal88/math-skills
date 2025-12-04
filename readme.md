@@ -1,7 +1,15 @@
-📊 Statistical Analysis Tool (Math-Skills)
+📊 Math-Skills: Statistical Analysis CLI Tool
 
-A robust CLI statistical analysis tool written in Go. This program reads a dataset of numbers from a file and calculates the Average, Median, Variance, and Standard Deviation, automatically rounding the results to the nearest integer.
+A powerful and fast command-line statistical tool written in Go, designed to analyze datasets and compute:
 
+✅ Average
+✅ Median
+✅ Variance
+✅ Standard Deviation
+
+All results are automatically rounded to the nearest integer.
+
+<p align="center"> <img src="https://img.shields.io/badge/Language-Go-blue?style=for-the-badge" /> <img src="https://img.shields.io/badge/CLI-Tool-green?style=for-the-badge" /> <img src="https://img.shields.io/badge/Docker-Supported-2496ED?style=for-the-badge&logo=docker&logoColor=white" /> </p>
 📑 Table of Contents
 
 Prerequisites
@@ -10,58 +18,49 @@ Installation
 
 Usage
 
+Example Output
+
 Testing & Data Generation
 
 Manual Testing
 
-Using the Data Generator (Docker)
+Docker-Based Testing
 
 Algorithms Used
 
 🛠 Prerequisites
 
-Before running the project, ensure you have the following installed:
+Make sure you have the following installed:
 
-Go (Golang): Required to compile and run the application.
+Go (Golang) — to compile & run the app
 
-Docker (Optional): Required only if you wish to use the provided automated data generator script.
+Docker (Optional) — only required for automated dataset generation
 
 📦 Installation
-
-Clone the repository and navigate to the project directory:
-
 git clone <your-repo-url>
 cd math-skills
 
-
 🚀 Usage
 
-To run the program, pass the filename containing your population data as an argument:
+Run the program by passing a file containing integer values (one per line):
 
 go run main.go data.txt
 
-
-Example Output
-
-After running the command above, the program will output statistics in the following format:
-
+🧾 Example Output
 Average: 20
 Median: 20
 Variance: 67
 Standard Deviation: 8
 
-
 🧪 Testing & Data Generation
 
-You can test the program in two ways: by manually creating a dataset or by using the provided Docker-based data generator.
+You can test the tool in two different ways.
 
-Option 1: Manual Testing
+🔹 Option 1: Manual Testing
 
-Create a file named data.txt.
+Create a file named data.txt
 
-Add a list of integers (one per line).
-
-Example data.txt:
+Add numbers, one per line:
 
 10
 20
@@ -72,56 +71,29 @@ Run the program:
 
 go run main.go data.txt
 
+🔹 Option 2: Docker Data Generator
 
-Option 2: Using the Data Generator (Docker)
+If you have the provided stat-bin folder, you can auto-generate datasets.
 
-If you have the provided stat-bin folder and Docker installed, you can generate random datasets to stress-test the application.
-
-1. Generate Data
-
-Run the following script to create a data.txt file filled with random numbers:
-
+1. Generate Random Data
 ./run.sh math-skills
 
+⚠️ Windows (Git Bash) Users
 
-⚠️ Note for Windows / Git Bash Users
-
-If the script fails with path errors, use this manual Docker command instead:
+If the script gives path issues, run:
 
 docker run --rm -v "/$(pwd -W):/app" -w //app math-runner ./bin/math-skills
 
-
 2. Run Your Solution
-
-Once data.txt is generated, run your Go program to see the statistics:
-
 go run main.go data.txt
 
-
 🧮 Algorithms Used
+Statistic	Description
+Average (Mean)	Sum of all values ÷ count
+Median	Middle value after sorting (or mean of two middle values)
+Variance	Average of squared differences from the mean
+Standard Deviation	Square root of the variance
 
-The program implements the following statistical formulas, rounding all final results to the nearest integer:
+All results are rounded to the nearest integer.
 
-Statistic
-
-Description
-
-Average (Mean)
-
-Calculated by summing all values and dividing by the total count of numbers.
-
-Median
-
-The middle value in a sorted list. If the list has an even number of elements, it is the average of the two middle values.
-
-Variance
-
-The average of the squared differences from the Mean.
-
-Standard Deviation
-
-The square root of the Variance.
-
-<p align="center">
-<sub>Made with ❤️ in Go</sub>
-</p>
+<p align="center"> <sub>Made with ❤️ using Go</sub> </p>
