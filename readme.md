@@ -82,7 +82,7 @@ If you have the provided stat-bin folder, you can auto-generate datasets.
 
 If the script gives path issues, run:
 
-docker run --rm -v "/$(pwd -W):/app" -w //app math-runner ./bin/math-skills
+ docker run --rm -v "/$(pwd -W):/app" -w //app math-runner ./bin/math-skills
 
 2. Run Your Solution
 go run main.go data.txt
