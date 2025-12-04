@@ -9,7 +9,7 @@ A powerful and fast command-line statistical tool written in Go, designed to ana
 
 All results are automatically rounded to the nearest integer.
 
-<p align="center"> <img src="https://img.shields.io/badge/Language-Go-blue?style=for-the-badge" /> <img src="https://img.shields.io/badge/CLI-Tool-green?style=for-the-badge" /> <img src="https://img.shields.io/badge/Docker-Supported-2496ED?style=for-the-badge&logo=docker&logoColor=white" /> </p>
+<p align="center"> <img src="https://img.shields.io/badge/Language-Go-blue?style=for-the-badge" />  <img src="https://img.shields.io/badge/Docker-Supported-2496ED?style=for-the-badge&logo=docker&logoColor=white" /> </p>
 📑 Table of Contents
 
 Prerequisites
