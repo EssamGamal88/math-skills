@@ -1,0 +1,13 @@
+$ docker run --rm -v "/$(pwd -W):/app" -w //app math-runner ./bin/math-skills
+
+
+
+docker run --rm: Run a container and delete it when done (keeps things clean).
+
+-v "/$(pwd -W):/app": "Mount" your current Windows folder into the container at the folder /app.
+
+-w /app: (The Fix) Force the container to work inside /app (a valid Linux path) instead of C:/Users....
+
+math-runner: The name of the image we built in Step 1.
+
+./bin/math-skills: The program you want to run.
