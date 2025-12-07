@@ -1,15 +1,62 @@
-# stat-projects-bin
+# 📈 Math-Skills: Statistical Analysis CLI Tool
 
-An infrastructure to run binaries to test the `stat-projects` on all platforms
-that support `docker-engine`.
+![Go Version](https://img.shields.io/badge/Go-1.20%2B-00ADD8?style=flat&logo=go)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 
-The binaries present in the directory `bin/` can be run directly on most Linux
-distributions without using the below instructions.
+A **powerful, fast, and lightweight command-line interface (CLI) tool** for performing essential statistical analysis on datasets. Written in **Go (Golang)** for optimal performance, this tool efficiently computes key descriptive statistics.
 
-## How to run
+---
 
-> To be able to run this script you need to have installed locally
-> [`docker-engine`](https://docs.docker.com/engine/install/)
+## ✨ Features
 
-Run the script `./run.sh <bin-name>`. The `<bin-name>` must be inside the
-`/bin` directory.
+The tool reads a list of integer values from a file and calculates the following metrics, with all results automatically **rounded to the nearest integer**:
+
+* ✅ **Average** (Arithmetic Mean)
+* ✅ **Median**
+* ✅ **Variance**
+* ✅ **Standard Deviation**
+
+---
+
+## 📑 Table of Contents
+
+1.  [Prerequisites](#-prerequisites)
+2.  [Installation](#-installation)
+3.  [Usage](#-usage)
+4.  [Example Output](#-example-output)
+5.  [Algorithms Used](#-algorithms-used)
+6.  [Testing](#-testing)
+
+---
+
+## 🛠 Prerequisites
+
+Ensure you have the following software installed on your system:
+
+* **Go (Golang)**: Required to build and run the application.
+* **Git**: Required for cloning the repository.
+* **Docker** (Optional): Only required if you plan to use the automated data generation and testing method.
+
+---
+
+## 📦 Installation
+
+To get a local copy up and running, follow these simple steps:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/your-username/math-skills.git](https://github.com/your-username/math-skills.git)
+    cd math-skills
+    ```
+    *(Note: Replace `https://github.com/your-username/math-skills.git` with the actual repository URL.)*
+
+---
+
+## 🚀 Usage
+
+Execute the program by providing the path to a text file containing the dataset as a command-line argument. The file must contain **integer values, one per line**.
+
+```bash
+go run main.go <filename>
+# Example:
+go run main.go data.txt
