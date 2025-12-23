@@ -44,9 +44,10 @@ Ensure you have the following software installed on your system:
 To get a local copy up and running, follow these simple steps:
 
 1.  **Clone the repository:**
-   git clone https://github.com/EssamGamal88/math-skills.git
-cd math-skills
-
+    ```bash
+    git clone https://github.com/EssamGamal88/math-skills.git
+    cd math-skills
+    ```
 ---
 
 ## 🚀 Usage
