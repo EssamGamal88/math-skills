@@ -44,11 +44,8 @@ Ensure you have the following software installed on your system:
 To get a local copy up and running, follow these simple steps:
 
 1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/your-username/math-skills.git](https://github.com/your-username/math-skills.git)
-    cd math-skills
-    ```
-    *(Note: Replace `https://github.com/your-username/math-skills.git` with the actual repository URL.)*
+   git clone https://github.com/EssamGamal88/math-skills.git
+cd math-skills
 
 ---
 
@@ -57,6 +54,4 @@ To get a local copy up and running, follow these simple steps:
 Execute the program by providing the path to a text file containing the dataset as a command-line argument. The file must contain **integer values, one per line**.
 
 ```bash
-go run main.go <filename>
-# Example:
 go run main.go data.txt
